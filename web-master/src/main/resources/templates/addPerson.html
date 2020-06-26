@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Add Person</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+</head>
+<body class="createPerson">
+<header class="header">
+<h1>Create a Person:</h1>
+</header>
+<br>
+
+<form action="#" th:action="@{/addPerson}" th:object="${personF}" method="post" class="input">
+
+    <div class="container">
+
+        <div style="float:left">
+    <label>First Name: </label> <br>
+    <input th:type="text" th:field="*{name}" placeholder="First Name..." /><br><br>
+        </div>
+
+        <div style="float:left">
+    <label>Last Name: </label> <br>
+    <input th:type="text" th:field="*{vorname}" placeholder="Last Name..."/><br><br>
+        </div>
+
+    <label>Email: </label> <br>
+    <input th:type="text" th:field="*{email}" placeholder="@..."/><br><br>
+
+        <div style="float:left">
+    <label>Number: </label> <br>
+    <input th:type="text" th:field="*{telefon}" placeholder="Number..."/><br><br>
+        </div>
+
+        <div style="float:left">
+    <label>Address: </label> <br>
+    <input th:type="text" th:field="*{strasse}" placeholder="Adresse..."/><br><br>
+        </div>
+
+    <label>Place: </label> <br>
+    <input th:type="text" th:field="*{ort}" placeholder="Place..."/><br><br>
+
+        <div style="float:left">
+    <label>Postcode: </label> <br>
+    <input th:type="text" th:field="*{plz}" placeholder="Postcode..."/><br><br>
+        </div>
+
+        <div style="float:left">
+    <label>Sex: </label> <br>
+    <input th:type="text" th:field="*{sex}" placeholder="male/female..."/><br><br>
+        </div>
+
+        <div style="float:left">
+    <label>Date of birth: </label> <br>
+    <input th:type="text" th:field="*{geburtstag}" placeholder="Date of birth"/><br><br>
+        </div>
+
+    <label>Nickname:</label> <br>
+    <input th:type="text" th:field="*{spitzname}" placeholder="Nickname..."/><br><br>
+
+    <p><input type="submit" value="Submit" /></p>
+
+    </div>
+
+</form>
+<br />
+
+<div th:if="${errorMessage}" th:utext="${errorMessage}" style="color: red; font-style: italic;"></div>
+</body>
+<footer class="footerPerson"><p>2020 Ernest Jewczyn</p></footer>
+</html>

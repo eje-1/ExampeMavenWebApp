@@ -1,0 +1,113 @@
+h1 {
+    font-family: Arial;
+}
+
+h2 {
+    font-family: Arial;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th, table td {
+    padding: 20px;
+    border: 1px solid #000000;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/* Header/Logo Person List */
+.header {
+  padding: 10px;
+  text-align: left;
+  background: #343a40;
+  color: white;
+  font-size: 10px;
+
+}
+
+div h2{
+font-size: 30px;
+margin-left: 20px;
+}
+
+div button{
+   float: right;
+   margin-right: 20px;
+   margin-top: -47px;
+   }
+
+.footerPerson{
+  padding: 5px;
+  text-align: center;
+  background: #343a40;
+  color: white;
+  font-size: 10px;
+  position:absolute;
+  bottom: 0;
+  width: 99%;
+}
+
+/*person List html klass body*/
+.personList{
+background-color: white;
+}
+
+.suche{
+float: right;
+margin-right: 20px;
+}
+
+.header p {
+font-size: 20px;
+ background: #1abc9c;
+ padding: 5px;
+}
+
+.header button {
+
+}
+
+/*Index style*/
+.headerIndex {
+  padding: 20px;
+  text-align: left;
+  background: #343a40;
+  color: white;
+  font-size: 15px;
+}
+
+/*index body*/
+.index{
+background-color: white;
+}
+
+.headerEdit{
+  padding: 20px;
+    text-align: left;
+    background: #343a40;
+    color: white;
+    font-size: 15px;
+}
+
+/*edit person klass body html*/
+.editPerson{
+
+
+}
+
+.input{
+padding-left: 20px;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
